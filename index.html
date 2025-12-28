@@ -18,17 +18,58 @@
                 <img src="static/img/logo_color.svg" alt=BeEngineer">
                 <h2 class="logo-str">Flash Typing</h2>
             </div>
+            <div class="reload" onclick="location.reload()">もう一度チャレンジ！</div>
+        </div>
+        <div class="level-wrapper">
+            <div class="level-heading">
+                <h2>レベルを選択しよう</h2>
+            </div>
+            <div class="level-options">
+                <label for="" class="level_btn active-level">
+                    中学1年生レベル
+                    <input type="radio" name="level" value="jr-1">
+                </label>
+                <label for="" class="level_btn">
+                    中学2年生レベル
+                    <input type="radio" name="level" value="jr-2">
+                </label>
+                <label for="" class="level_btn">
+                    中学3年生レベル
+                    <input type="radio" name="level" value="jr-3">
+                </label>
+                <label for="" class="level_btn">
+                    高校1年生レベル
+                    <input type="radio" name="level" value="hi-1">
+                </label>
+                <label for="" class="level_btn">
+                    高校2年生レベル
+                    <input type="radio" name="level" value="hi-2">
+                </label>
+                <label for="" class="level_btn">
+                    高校3年生レベル
+                    <input type="radio" name="level" value="hi-3">
+                </label>
+            </div>
         </div>
     </header>
 
     <!-- 2 -->
-    <section class="panel-container"></section>
+    <section class="panel-container">
+        <h1 id="info">スペースキーを押してください！</h1>
+    </section>
 
     <!-- 3 -->
-    <section class="game__info"></section>
+    <section class="game__info">
+        <h2>MISS : <span id="missMount">0</span></h2>
+        <h2>TIME : <span id="timeText">00.000</span></h2>
+        <h2>Word Count : <span id="wordCount">0</span><span id="wordLength"></span></h2>
+    </section>
 
     <!-- 4 -->
-    <section id="results"></section>
+    <section id="results">
+        <h1 id="score" class="result"></h1>
+        <h4 id="other-result" class="result"></h4>
+    </section>
 
     <!-- 5 -->
     <section id="component">
@@ -43,6 +84,9 @@
         </audio>
         <audio id="start_sound">
             <source src="static/mp3/countdown-2.mp3" type="audio/mp3">
+        </audio>
+        <audio id="bgm">
+            <source src="static/mp3/Future_1.mp3" type="audio/mp3">
         </audio>
     </section>
 
